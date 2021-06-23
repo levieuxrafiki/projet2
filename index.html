@@ -15,13 +15,13 @@
       
           <img class="logo" src="images/logo/Reservia.svg" alt="logo" />
     
-        <nav class="nav-contenu"> 
+        <navbar class="nav-contenu"> 
           <ul>
             <li><a class="hébergement-lien"><a href="#">Hébergements</a></li>
             <li><a class="activités-lien"><a href="#">Activités</a></li>
             <li><a class="inscription-lien"><a href="#">S'inscrire</a></li>
           </ul>
-      
+          </navbar>
         </nav>
         <hgroup class="titre-contenu">
           <h1 class="titre-principal">Trouvez votre hébergement pour des vaccances de rève</h1>
@@ -49,31 +49,31 @@
               <div class="filter-item">
           
               
-                <span class="filtre-icones"><i class="fas fa-money-bill-wave"></i></span>
-                <form class="filtre-économie" method="post" action="#">
+                <span class="filter-icones"><i class="fas fa-money-bill-wave"></i></span>
+                <form class="filter-item-formulaire " method="post" action="#">
                   <input class="filter-input" type="text" name="economique" value="Économique" disabled="disabled">
                 </form>
               </div>
               <div class="filter-item">
-                <span class="filtre-icones"><i class="fas fa-child"></i></span>
+                <span class="filter-icones"><i class="fas fa-child"></i></span>
                 <form class="filtre-famille" method="POST" action="#">
                   <input class="filter-input" type="text" name="famille" value="Famille" disabled="disabled">
                 </form>
               </div>
               <div class="filter-item">
-                <span class="filtre-icones"><i class="fas fa-heart"></i></span>
-                <form class="filtre-romantique" method="POST" action="#">
+                <span class="filter-icones"><i class="fas fa-heart"></i></span>
+                <form class="filter-romantique" method="POST" action="#">
                   <input class="filter-input" type="text" name="romantique" value="Romantique" disabled="disabled">
                 </form>
               <div class="filter-item">
-                <span class="filtre-icones"><i class="fas fa-dog"></i></span>
-                <form class="filtre-animaux" method="POSt" action="#">
+                <span class="filter-icones"><i class="fas fa-dog"></i></span>
+                <form class="filter-animaux" method="POSt" action="#">
                   <input class="filter-input" type="text" name="animaux" value="Animaux autorisé" disabled="disabled">
                 </form>
             </div>
        </fieldset>
-          <div class="info">
-            <span class="icone-infos"><i class="fas fa-info"></i></span>
+          <div class="info-container">
+            <span class="icone-info"><i class="fas fa-info"></i></span>
             <p class="info">Plus de 500 logements sont disponibles dans cette ville</p>
           </div>
         
@@ -84,9 +84,9 @@
             <h2>Les plus populaires</h2>
             <span><i class="fas fa-chart-line"></i></span>
           </div>
-          <div class="photos-Aside-content">
-            <article class="photos-Aside">
-              </a><img class="aside-error" src="./images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
+          <div class="photos-aside-content">
+            <article class="photos-aside">
+              <img class="aside-thumb" src="./images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg"
                 alt="Photo de l(hotel le soleil du matin"></a>
               <div class="photos-aside-body">
                 <h2 class="titre-photo-aside"> Hotel le soleil du matin</h2>
@@ -113,7 +113,7 @@
               </div>
             </article>
             <article class="photo-aside">
-              </a><img class="aside-error" src="./images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
+              </a><img class="aside-thumb" src="./images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg"
               alt="Photo de la chambre d'hôtes au coeur de l'eau"></a>
               <div class="photos-aside-body">
                 <h2 class="titre-photo-aside">Au coeur de l'eau chambre d'hôtes</h2>
@@ -139,8 +139,8 @@
 
               </div>
             </article>
-            <article class="photos-Aside">
-              <img class="aside-error" src="./images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
+            <article class="photos-aside">
+              <img class="aside-thumb" src="./images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg"
               alt="Hotel tout bleu et blanc"></a>
               <div class="photos-aside-body">
                 <h2 class="titre-photo-aside">hotel tout bleu et blanc</h2>
@@ -170,14 +170,14 @@
           </div>
       </aside>
       <main id="hébergement">
-        <h2 class="hebergement-tittre">Hébergements à Marseille</h2>
+        <h2 class="hebergement-title">Hébergements à Marseille</h2>
         <div class="hebergement-photo-contenu">
           <article class="hebergement-photo-canne">
-            <img class="hebergment-ok" src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="photo">
+            <img class="hebergement-thumb" src="images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="photo">
             <div class="hébergement-corps">
               <h2 class="hebergement-corps-titre">Auberge de la cannebiere</h2>
               <h3 class="hebergement-corps-prix">Nuit a partir de 25 <strong>€</strong></h3>
-              <ul class="hebergements-corps-note">
+              <ul class="hebergements-body-note">
                 <li>
                   <span class="étoile-blue"><i class="fas fa-star"></i></span>
                 </li>
@@ -202,7 +202,7 @@
             <div class="hébergement-corps">
               <h2 class="hebergement-corps-titre">Hotel du port</h2>
               <h3 class="hebergement-corps-prix">Nuit a partir de 52 <strong>€</strong></h3>
-              <ul class="hebergements-corps-note">
+              <ul class="hebergements-body-note">
                 <li>
                   <span class="étoile-blue"><i class="fas fa-star"></i></span>
                 </li>
@@ -327,23 +327,23 @@
         <a href="#" class="more">Afficher Plus</a> 
       </main>
 
-      <section id="activité">
+      <section id="activity">
         <h2 class="activité-titre">Activités à Marseille</h2>
         <div class="photo-activité-contenu">
-          <article class="activité-photo-port">
-            <img class="activité- thumb port" src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
+          <article class="activité-photo port">
+            <img class="activité-thumb port" src="images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg"
               alt="photo">
             <h2 class="corps-activité">Vieux Ports</h2>
 
           </article>
           <article class="activité-fort">
-            <img class="activité- thumb fort" src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
+            <img class="activité-thumb fort" src="images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg"
               alt="photo">
             <h2 class="corps-activité">Fort de Pomègues</h2>
             
           </article>
           <article class="activité-Iles">
-            <img class="activité- thumb Iles" src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
+            <img class="activité-thumb Iles" src="images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg"
               alt="photo">
             <h2 class="corps-activité">Iles de Frioul</h2>
             
@@ -356,7 +356,7 @@
           </article>
         </article>
         <article class="activité-Notre">
-          <img class="activité- thumb Notre" src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
+          <img class="activité-thumb Notre" src="images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg"
             alt="photo">
           <h2 class="corps-activité">Notre-dame-de-la-Garde</h2>
           

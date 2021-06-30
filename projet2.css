@@ -6,6 +6,8 @@
   color: black;
 }
 
+/* taille de la police */
+
 html{
   font-size: 16px;
 }
@@ -20,11 +22,15 @@ ul {
 fieldset {
   border:none
 }
+
+/* ----------------------------*/
 nav a {
   display: block;
   font-size: 1.2rem;
   font-weight: 500;
 }
+
+
 
 .logo {
   height: 55px;
@@ -33,7 +39,7 @@ nav a {
 
 }
 
-.nav-contenu {
+.nav-container{
   display: flex;
   justify-content: flex-end;
   width: 100%;
@@ -42,7 +48,7 @@ nav a {
   flex-wrap: wrap-reverse;
 }
 
-.hébergement-lien {
+.hebergement-link {
   width: 50%;
   text-align: center;
   border-bottom: solid 3px #0065FC;
@@ -52,7 +58,7 @@ nav a {
   transition: 0,5s;
 }
 
-.activités-lien {
+.activity-link {
   width: 50%;
   text-align: center;
   border-bottom: solid 3px #F2F2F2;
@@ -62,7 +68,7 @@ nav a {
   
 }
 
-.inscription-lien {
+.subscrib-link {
   position: relative;
   bottom: 56px;
   margin-right: 5px;
@@ -70,27 +76,28 @@ nav a {
 
 }
 
-.titre-contenu {
+.titre_container{
   margin: 35px 60px 0 5%;
 }
 
-.titre-principal {
+.title_principal {
   font-size: 1.3rem;
   margin-bottom: 10px;
 }
 
-.titre-secondaire {
+.title_secondaire {
   font-size: 500;
   font-weight: 1rem;
 }
+/* Survol des liens  */
 
-.activités-lien:hover{
+.activity-link:hover{
  
   border-bottom: solid 3px #0065FC ;
   color: #0065FC;
 }
 
-.inscription-lien:hover {
+.subscrib-link:hover {
   color: #0065FC;
   font-weight: bolder;
 }
@@ -325,9 +332,8 @@ margin: 15px 15px 5px 15px;
 }
 
 .note-aside {
-  position:absolute
-;
-top: 70px;
+  position:absolute;
+  top: 70px;
 }
 
 .aside-thumb {
@@ -404,8 +410,7 @@ top: 70px;
 
 .activité-photo {
   background-color: white;
-  max-widt
-  h: 335px;
+  max-width: 335px;
   height: auto;
   margin-left: auto;
   margin-right: auto;
@@ -539,4 +544,65 @@ padding: 30px
 .hebergement-photo-contenu {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax (240px, 1fr);
+}
+
+.filter-container {
+  display: flex;
+}
+
+.cards-activity-content {
+  display: grid;
+  grid-template-columns: 3,5% 20% 1fr 20% 1fr 20% 3,5%;
+  grid-template-rows: 2fr;
+}
+
+.port {
+  grid-column-start: 2;
+  grid-row-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+
+.port img {
+  height: 305px;
+}
+
+.fort {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
+}
+
+.ile {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 4;
+}
+
+.parc {
+  grid-column-start: 6;
+  grid-column-end: 7;
+  grid-row-start: 1;
+  grid-row-end: 4;
+}
+
+.parc img {
+  height: 305px;
+}
+
+.notre {
+  grid-column-start: 8;
+  grid-column-end: 9;
+  grid-row-start: 1;
+  grid-row-end: 2;
+
+}
+
+.parc2 {
+  grid-column-start: 8;
+  grid-column-end: 9;
+  grid-row-start: 2;
+  grid-row-end: 3;
 }

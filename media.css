@@ -1,0 +1,46 @@
+
+@media only screen and (min-width:900px) {
+  .bloc.page {
+    width:100%;
+    display:grid;
+    grid-template-columns: 3.5 60% 40px 3.5%;
+    grid-template-areas: "header header header header header"
+    "search search search search search"
+    "filter filter filter filter filter" ".main .aside "
+    "activity activity activity"
+  "footer footer footer footer footer";
+
+  }
+  header {
+    grid-area: "header";
+  }
+  .search {
+    grid-area: "search";
+  }
+  .filter {
+   grid-area: "filter"
+  }
+  main {
+    background-color: #f2f2f2;
+    height: auto;
+    border-radius: 17px;
+    grid-area: "main";
+    width: 95%;
+    
+  }
+  aside {
+    height: auto;
+    border-radius: 17px;
+    grid-area: "aside";
+    max-width: 340px;
+    margin-left: 40px;
+    margin-right: 5%;
+  }
+  #activity {
+    grid-area: "activity";
+  }
+  footer {
+    grid-area: "footer";
+    width: 100%;
+  }
+}

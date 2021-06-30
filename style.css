@@ -102,10 +102,6 @@ nav a {
   font-weight: bolder;
 }
 
-/* ----------SHEARCH BAR--------------*/
-
-
-
 .btn-recherche {
   margin-left: 5%;
   margin-right: 5%;
@@ -114,7 +110,7 @@ nav a {
   grid-area: "btn";
 }
 
-.pin-icone {
+.icones {
   background-color: #F2F2F2;
   height: 50px;
   width: 50px;
@@ -123,19 +119,18 @@ nav a {
   font-size: large;
 }
 
-.pin-icone i {
+.icones i {
   margin: auto;
   color: black;
 }
 
-.btn-recherche_input {
+.btn-recherche_input{
   height: 50px;
   width: 250px;
   font-size: 1rem;
-  font-weight: 600;
+  font-weight: bold;
   padding-left: 15px;
   border: solid 1px #F2F2F2;
-
 }
 
 .btn-recherche_input_submit {
@@ -157,8 +152,6 @@ nav a {
   color: #F2F2F2;
 }
 
-/* -----------Filtres */
-
 .filter-container{
   flex-wrap: wrap;
   display: flex;
@@ -166,7 +159,7 @@ nav a {
   
 }
 
-.filter-title {
+.titre-filtre {
   font-size: 1rem;
   position: absolute;
   margin-left: 5%;
@@ -190,7 +183,7 @@ nav a {
   background-color: #0065FC;
   color: #DEEBFF
 }
-.filter-icone {
+.filter-icones{
   background-color:#DEEBFF ;
   height: 55px;
   width: 55px;
@@ -202,7 +195,7 @@ nav a {
   z-index: 1;
 }
 
-.filter-icone i {
+.filter-icones i {
   color: #0065FC;
 }
 
@@ -265,22 +258,19 @@ nav a {
   color: #0065FC;
 }
 
-/* ---------ASIDE--------*/
-
-
 .fas {
   font-size: 0,7rem;
   color: #f2f2f2;
 }
-.blue-star i {
+.étoile-blue i {
 color: #0065FC;
 }
 
 aside {
   background-color: #F2F2F2;
-  }
+}
 
-.aside_title {
+.aside-titre {
   display: flex;
   align-items: center;
   margin-left: 6%;
@@ -289,22 +279,22 @@ aside {
 
 }
 
-.aside_title h2 {
+.aside-titre h2 {
   margin-top: 30px;
 
 }
-.aside_title i {
+.aside-titre i {
   color: black;
   font-size: 1.3rem;
   margin-right: 20px;
 }
 
-.cards-aside-content {
+.photos-aside-content {
 display: flex;
 justify-content: center;
 flex-wrap: wrap;
 }
-.cards-aside {
+.photos-aside {
   display: flex;
   background-color: white;
   max-width: 335px;
@@ -316,26 +306,26 @@ flex-wrap: wrap;
   transition: 0,3s;
 }
 
-.cards-aside-body {
+.photos-aside-body {
 position: relative;
 margin: 15px 15px 5px 15px;
 }
 
-.hebergement_body {
+.hébergement-body {
   margin-left:  15px;
 }
 
-.title-cards-aside, .hebergement_body_title , .body-activity {
+.titre-photo-aside, .hébergement-corps , .corps-activité {
 
   font-size: 1rem;
 
 }
-.body-activity{
+.corps-activité{
   margin-left: 18px;
   margin-top: 20px;
   padding-bottom: 15px;
 }
-.prix-aside , .hebergement_body_price {
+.prix-aside , .hebergement-corps-prix {
   font-size: 0.8rem;
   font-weight: 400;
 
@@ -363,15 +353,13 @@ margin: 15px 15px 5px 15px;
   display: flex;
 }
 
-                      /*-------- Main (hebergement) */
-
-.hebergement_title {
+.hebergement-title {
   margin-top: 40px;
   margin-bottom: 20px;
   margin-left: 6%;
 }
 
-.hebergement_cards {
+.hébergement-photo {
   background-color: white;
   max-width: 335px;
   height: auto;
@@ -383,12 +371,7 @@ margin: 15px 15px 5px 15px;
   transition: 0.3s;
 }
 
-.hebergement_cards:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 40px -10px black;
-}
-
-.hebergement_body_note {
+.hébergement-body-note {
   display: flex;
 }
 
@@ -401,6 +384,11 @@ margin: 15px 15px 5px 15px;
   border-radius: 17px 17px 0px 0px;
 }
 
+.hébergement-photo:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 40px -10px black;
+}
+
 .more {
   font-weight: bold;
   margin-left: 30px;
@@ -411,18 +399,16 @@ margin: 15px 15px 5px 15px;
   color: #0065FC;
 } 
 
-                              /* MAIN (activity)*/
-
 #activity {
   margin-top: 60px;
 }
 
-.activity-title {
+.activité-titre {
   margin-left: 6%;
   margin-bottom: 30px;
 }
 
-.activity-cards {
+.activité-photo {
   background-color: white;
   max-width: 335px;
   height: auto;
@@ -434,13 +420,13 @@ margin: 15px 15px 5px 15px;
   transition: 0,3s;
 }
 
-.activity-cards:hover{
+.activité-photo:hover{
   transform: scale(1.05);
   box-shadow: 0 0 40px -10px black;
 
 }
 
-.activity-thumb {
+.activité-thumb {
   object-fit: cover;
   height: 136px;
   width: 100%;
@@ -457,13 +443,59 @@ background-color: #f2f2f2;
 padding: 30px
 }
 
-.list-élément {
+.liste-élément {
   margin-top: 30px;
   margin-bottom: 30px;
 }
 
-.list-élément a:hover {
+.liste-élément a:hover {
   color: #0065FC;
+}
+
+@media only screen and (min-width:900px) {
+  .bloc.page {
+    width:100%;
+    display:grid;
+    grid-template-columns: 3.5 60% 40px 3.5%;
+    grid-template-areas: "header header header header header"
+    "search search search search search"
+    "filter filter filter filter filter" ".main .aside "
+    "activity activity activity"
+  "footer footer footer footer footer";
+
+  }
+  header {
+    grid-area: "header";
+  }
+  .search {
+    grid-area: "search";
+  }
+  .filter {
+   grid-area: "filter"
+  }
+  main {
+    background-color: #f2f2f2;
+    height: auto;
+    border-radius: 17px;
+    grid-area: "main";
+    width: 95%;
+    
+  }
+  aside {
+    height: auto;
+    border-radius: 17px;
+    grid-area: "aside";
+    max-width: 340px;
+    margin-left: 40px;
+    margin-right: 5%;
+  }
+  #activity {
+    grid-area: "activity";
+  }
+  footer {
+    grid-area: "footer";
+    width: 100%;
+  }
 }
 
 
@@ -509,17 +541,9 @@ padding: 30px
 .btn-recherche_loupe {
   visibility: hidden;
 }
-.hebergement-cards-contenu {
+.hebergement-photo-contenu {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax (240px, 1fr));
-}
-
-.hebergement_cards {
-  max-width: 245px;
-}
-
-.more {
-  padding-bottom: 20px;
+  grid-template-columns: repeat(auto-fit, minmax (240px, 1fr);
 }
 
 .filter-container {

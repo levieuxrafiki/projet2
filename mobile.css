@@ -1,46 +1,282 @@
+/* Media Queries */
 
-@media only screen and (min-width:900px) {
-  .bloc.page {
-    width:100%;
-    display:grid;
-    grid-template-columns: 3.5 60% 40px 3.5%;
-    grid-template-areas: "header header header header header"
-    "search search search search search"
-    "filter filter filter filter filter" ".main .aside "
-    "activity activity activity"
-  "footer footer footer footer footer";
-
+@media screen and (max-width: 1440px) {
+  .blocs {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 1fr;
+    row-gap: 30px;
+    grid-template-areas: 
+    "bloc-most-popular"
+    "bloc-accomodation";
   }
-  header {
-    grid-area: "header";
+  .blocs .bloc-accomodation {
+    grid-area: bloc-accomodation;
   }
-  .search {
-    grid-area: "search";
+  .blocs .bloc-most-popular {
+    grid-area: bloc-most-popular;
   }
-  .filter {
-   grid-area: "filter"
-  }
-  main {
-    background-color: #f2f2f2;
-    height: auto;
-    border-radius: 17px;
-    grid-area: "main";
-    width: 95%;
-    
-  }
-  aside {
-    height: auto;
-    border-radius: 17px;
-    grid-area: "aside";
-    max-width: 340px;
-    margin-left: 40px;
-    margin-right: 5%;
-  }
-  #activity {
-    grid-area: "activity";
-  }
-  footer {
-    grid-area: "footer";
+  .marseille-cases {
     width: 100%;
   }
+  .marseille-case > .marseille-case-img {
+    width: 100%;
+    height: 100px;
+    background-size: cover;
+  }
+  .most-populars {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 3fr;
+    column-gap: 25px;
+    height: 200px;
+    width: 95%;
+  }
+
+  .most-populars a {
+    display: grid;
+  }
+
+  .most-populars .title-h2-and-icon {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 0;
+    grid-area: 1 / 1 / 2 / -1;
+  }
+  .most-populars .title-h2-and-icon h2 {
+    margin: 0;
+  }
+  .most-populars i {
+    font-size: 26px;
+  }
+  .most-popular {
+    background-color: grey;
+    height: auto;
+  }
+  .most-popular-case-img {
+    margin: 0;
+    width: 30%;
+    height: 100%;
+    background-size: cover;
+    border-radius: 20px 0 0 15px;
+  }
+
+  .most-popular-case-img img {
+    min-width: 0;
+  }
+
+  .marseille-activities {
+    display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+  "activity-1 activity-2 activity-4"
+  "activity-5 activity-3 activity-6";
+  margin-bottom: 100px;
+  }
+
+  .activity__full-card {
+    max-height: 270px;
+    min-height: 270px;
+  }
+
+  #activity-1 {
+    grid-area: activity-1;
+  }
+  #activity-2 {
+    grid-area: activity-2;
+  }
+  #activity-3 {
+    grid-area: activity-3;
+  }
+  #activity-4 {
+    grid-area: activity-4;
+  }
+  #activity-5 {
+    grid-area: activity-5;
+  }
+  #activity-6 {
+    grid-area: activity-6;
+  }
+  .most-popular-case-img img {
+    min-width: 80px;
+  }
 }
+
+@media screen and (max-width: 1200px) {
+    main {
+      width: 95%;
+    }
+  }
+  
+  @media screen and (max-width: 900px) {
+    main {
+      width: 92%;
+    }
+    .marseille-cases {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+    }
+    .bloc-most-popular {
+      display: flex;
+      justify-content: center;
+      align-items: stretch;
+      height: 560px;
+    }
+    .bloc-most-popular .most-populars {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
+      padding-top: 25px;
+    }
+    .bloc-most-popular .most-populars .most-popular {
+      height: 120px;
+    }
+    .marseille-activities {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(3, 1fr);
+      margin-bottom: 370px;
+      grid-template-areas: 
+    "activity-1 activity-2"
+    "activity-4 activity-3"
+    "activity-5 activity-6";
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .blocs {
+      display: grid;
+      grid-template-rows: 1fr auto;
+    }
+    .marseille-cases {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+    .navbar {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      grid-template-areas:
+      "logo navbar-link-sign-up"
+      "navbar-link-accomodation navbar-link-activities";
+    }
+    .navbar img {
+      grid-area: logo;
+    }
+    .navbar #navbar-link-accomodation {
+      flex-direction: column-reverse;
+      grid-area: navbar-link-accomodation;
+    }
+    .navbar #navbar-link-activities {
+      flex-direction: column-reverse;
+      grid-area: navbar-link-activities;
+    }
+    .navbar #navbar-link-activities .underline-effect {
+      background-color: #dbdbdb;
+    }
+    .navbar #navbar-link-sign-up {
+      display: flex;
+      justify-content: flex-end;
+      grid-area: navbar-link-sign-up;
+    }
+  
+    .research-box {
+      position: relative;
+    }
+  
+    .research-bar {
+      width: 300px;
+      height: 49px;
+    }
+    #button-research {
+      display: none;
+    }
+    #icon-glass {
+      display: block;
+      position: absolute;
+      right: -20px;
+      border-radius: 15px;
+    }
+    .most-popular-case-img img {
+      min-width: 145px;
+    }
+    .marseille-activities {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(6, 1fr);
+      grid-template-areas:
+      "activity-1"
+      "activity-2"
+      "activity-3"
+      "activity-4"
+      "activity-5"
+      "activity-6";
+      height: 1500px;
+      margin-bottom: 350px;
+  
+    }
+    .footer-blocs {
+      display: inline-flex;
+      flex-direction: column;
+    }
+    .footer-blocs .footer-bloc {
+      padding: 10px 20px;
+    }
+  }
+  
+  @media screen and (max-width: 550px) {
+    .most-popular-case-img img {
+      min-width: 125px;
+      max-width: 125px;
+    }
+  }
+  
+  
+  
+  @media screen and (max-width: 480px) {
+    .research-box {
+      width: 80%;
+    }
+    
+    .filters ul li {
+      padding: 0 12px 0 0;
+      margin-left: 5px;
+    }
+  
+    .bloc {
+      border-radius: 0;
+    }
+  
+    .bloc-accomodation {
+      background: white;
+      margin-left: -15px;
+    }
+  
+    .bloc-most-popular {
+      margin-left: -12px;
+      padding-right: 24px;
+      width: 100%;
+    }
+    
+    .most-popular-case-img img {
+      min-width: 100px;
+      max-width: 100px;
+    }
+  
+  
+    .push-to-right {
+      margin-left: 0 !important;
+    }
+  }
+  
+  @media screen and (max-width: 360px) {
+    .most-popular-case-img img {
+      min-width: 80px;
+      max-width: 80px;
+    }
+  }
+
+

@@ -1,6 +1,6 @@
 # projet2
 
-<h1>lien git pages https://github.com/levieuxrafiki/projet2/deployments/activity_log?environment=github-pages<h1>
+<h1>lien git pages https://levieuxrafiki.github.io/projet2/  <h1>
 
 
 

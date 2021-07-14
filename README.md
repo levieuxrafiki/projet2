@@ -1,4 +1,9 @@
 # projet2
+
+<h1>lien git pages https://github.com/levieuxrafiki/projet2/deployments/activity_log?environment=github-pages<h1>
+
+
+
 <h1>Réailisation du projet 2 Openclassromm "Réservia"</h1>
 <h2>création de la navbar<h2>
 <p>utiliaston dela balisse sémantique "header"  "div" et de la balise "nav" "a href" "a"<p>

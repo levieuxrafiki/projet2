@@ -1,5 +1,5 @@
 body {
-  font-family: 'Raleway', sans-serif;;
+  font-family: "Raleway", sans-serif;
   margin: 0;
 }
 
@@ -13,8 +13,6 @@ header {
   max-width: 1440px;
   margin: auto;
 }
-
-
 
 .navbar {
   display: grid;
@@ -35,7 +33,6 @@ header {
   align-items: center;
   flex-direction: column;
 }
-
 
 .navbar .navbar-link .underline-effect {
   width: 100%;
@@ -129,7 +126,7 @@ main {
   align-items: center;
   width: 55px;
   height: auto;
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
   border-radius: 14px 0 0 14px;
 }
 
@@ -142,8 +139,8 @@ main {
   height: 50px;
   width: 220px;
   border: none;
-  border-top: solid 1px #F2F2F2;
-  border-bottom: solid 1px #F2F2F2;
+  border-top: solid 1px #f2f2f2;
+  border-bottom: solid 1px #f2f2f2;
 }
 
 .research-bar::placeholder {
@@ -196,7 +193,7 @@ main {
 
 .filters ul li:hover {
   cursor: pointer;
-  background: #DEEBFF;
+  background: #deebff;
   transition-duration: 0.25s;
 }
 
@@ -206,7 +203,7 @@ main {
 }
 
 .icon-filter {
-  background-color: #DEEBFF;
+  background-color: #deebff;
   color: #0065fc;
   padding: 18px;
   border-radius: 200px;
@@ -217,7 +214,7 @@ main {
   color: #0065fc;
   font-size: 16px;
   padding: 7px 11px 7px 11px;
-  border: solid 1px #D9D9D9;
+  border: solid 1px #d9d9d9;
   border-radius: 2000px;
   margin-right: 20px;
 }
@@ -234,7 +231,7 @@ main {
 }
 
 .bloc {
-  background: #F2F2F2;
+  background: #f2f2f2;
   border-radius: 25px;
 }
 
@@ -264,7 +261,6 @@ main {
   grid-gap: 27px;
   padding: 0 0 0 0;
 }
-
 
 .marseille-case {
   background: white;
@@ -357,7 +353,6 @@ main {
   width: 40%;
   height: 100%;
   border-radius: 15px 0 0 15px;
-
 }
 
 .most-popular-case-img img {
@@ -368,7 +363,6 @@ main {
   border-radius: 20px 0 0 15px;
   object-fit: cover;
 }
-
 
 .most-popular .case-text {
   margin-left: 10px;
@@ -422,7 +416,7 @@ main {
 }
 
 .hostingMainCardGradeIconEmpty {
-  color: #D9D9D9;
+  color: #d9d9d9;
 }
 
 .show-more a {
@@ -438,7 +432,7 @@ main {
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: 3fr 0.3fr 0.3fr 0.3fr 0.3fr 3fr;
   grid-gap: 30px;
-  grid-template-areas: 
+  grid-template-areas:
     "activity-1 activity-2 activity-4 activity-5"
     "activity-1 activity-2 activity-4 activity-5"
     "activity-1 activity-2 activity-4 activity-6"
@@ -452,7 +446,7 @@ main {
   width: 100%;
   height: 100%;
   border-radius: 20px;
-  box-shadow: 1px 1px 17px -9px rgba(0,0,0,0.75);
+  box-shadow: 1px 1px 17px -9px rgba(0, 0, 0, 0.75);
 }
 
 .activity__full-card img {
@@ -482,7 +476,7 @@ main {
   grid-area: activity-1;
 }
 #activity-2 {
-  grid-area: activity-2;  
+  grid-area: activity-2;
 }
 #activity-3 {
   grid-area: activity-3;
@@ -506,7 +500,7 @@ main {
 /* Footer */
 .footer {
   width: 100%;
-  background: #F2F2F2;
+  background: #f2f2f2;
   display: flex;
   justify-content: center;
   align-items: center;
